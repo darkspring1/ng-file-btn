@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
+<body ng-app="ngFileBtn">
+
+<input style="display: none" id="fileDialog" type="file" />
+
+<span ng-file-btn="fileDialog" class="btn btn-default">
+   click me!
+</span>
+
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="ngFileBtn.js"></script>
 
 </body>
 </html>
