@@ -5,6 +5,7 @@ angular.module('ngFileBtn', [])
     .directive('ngFileBtn', function () {
         return {
             restrict: 'A',
+            scope: true,
             link: function (scope, element, attrs) {
                 var fileDialogId = attrs.ngFileBtn;
                 function handler(e) { $("#" + fileDialogId).trigger("click"); }
